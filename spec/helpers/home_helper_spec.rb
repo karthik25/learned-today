@@ -1,15 +1,11 @@
 require 'spec_helper'
+require 'yaml'
 
-# Specs in this file have access to a helper object that includes
-# the HomeHelper. For example:
-#
-# describe HomeHelper do
-#   describe "string concat" do
-#     it "concats two strings with spaces" do
-#       helper.concat_strings("this","that").should == "this that"
-#     end
-#   end
-# end
-describe HomeHelper do
-  pending "add some examples to (or delete) #{__FILE__}"
+describe HomeHelper do    
+  describe "translate yaml" do 
+	it "to object" do 
+		o = helper.translate_yaml(YAML::load_file(Rails.root.join 'samples/sample.yml'))
+		o.should == "a sample fact"
+	end
+  end
 end

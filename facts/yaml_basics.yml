@@ -1,0 +1,3 @@
+---
+fact: You can load some yaml string, say, "name: karthik" using the statements "require 'yaml'", followed by "y = YAML.load("name: karthik"). Then to access the "name", use "y['name']"
+date: 01-23-2014
