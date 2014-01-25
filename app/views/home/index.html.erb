@@ -2,11 +2,11 @@
 
 <% @facts.each do |fact| %>
 	<div class="panel panel-default">
-	  <div class="panel-heading">Learnt on <%= fact.date %></div>
+	  <div class="panel-heading">Learnt on <strong><%= fact.date %></strong></div>
 	  <div class="panel-body">
 		<%= fact.fact.html_safe %>
 	  </div>
-	</div>	
+	</div>
 <% end %>
 
 <%= paginate @facts %>

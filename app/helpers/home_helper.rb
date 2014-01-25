@@ -35,7 +35,9 @@ module HomeHelper
 
 	private
 		def procdir(dir)
-		  Dir[ File.join(dir, '**', '*') ].reject { |p| File.directory? p }
+		  files = Dir[ File.join(dir, '**', '*') ].reject { |p| File.directory? p }
+		  files = files.sort_by { |file| File.ctime(file) }
+		  files.reverse
 		end
 
 		def read_file(file)
@@ -44,7 +46,7 @@ module HomeHelper
 		end
 
 		def read_file_date(file)
-			mtime = File.mtime(file)
+			mtime = File.ctime(file)
 			date_str = "#{mtime.month}/#{mtime.day}/#{mtime.year}"
 		end
 end
