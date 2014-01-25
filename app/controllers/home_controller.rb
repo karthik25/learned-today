@@ -2,6 +2,8 @@ class HomeController < ApplicationController
   include HomeHelper
 
   def index
-	@facts = process_txt_facts
+	@facts = Kaminari.paginate_array(process_txt_facts)
+					 .page(params[:page])
+					 .per(3)
   end
 end

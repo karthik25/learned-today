@@ -1,4 +1,5 @@
 <br /><br />
+
 <% @facts.each do |fact| %>
 	<div class="panel panel-default">
 	  <div class="panel-heading">Learnt on <%= fact.date %></div>
@@ -7,3 +8,5 @@
 	  </div>
 	</div>	
 <% end %>
+
+<%= paginate @facts %>

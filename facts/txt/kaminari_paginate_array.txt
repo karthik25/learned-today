@@ -1,0 +1,1 @@
+You can paginate an array with Kaminari using this statement <code>Kaminari.paginate_array(@your_array_var_name).page(params[:page]).per(REQD_PER_PAGE_COUNT)</code>
