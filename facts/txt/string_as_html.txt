@@ -1,0 +1,1 @@
+In order to display a string with html content use <code>&lt;%= your_string.html_safe %&gt;</code>

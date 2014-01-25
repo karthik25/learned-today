@@ -1,0 +1,1 @@
+You can load some yaml string, say, <code>name: karthik</code> using the statements <code>require "yaml"</code>, followed by <code>y = YAML.load("name: karthik")</code>. Then to access the "name", use <code>y["name"]</code>

@@ -1,2 +1,9 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<br /><br />
+<% @facts.each do |fact| %>
+	<div class="panel panel-default">
+	  <div class="panel-heading">Learnt on <%= fact.date %></div>
+	  <div class="panel-body">
+		<%= fact.fact.html_safe %>
+	  </div>
+	</div>	
+<% end %>
