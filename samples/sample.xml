@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<facts>
+	<fact>
+		<content>
+			some sample content
+		</content>
+		<date>
+			01/24/2014
+		</date>
+	</fact>
+</facts>

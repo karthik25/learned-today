@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<facts>
+	<fact>
+		<content>
+		In order to display a string with html content use &lt;code&gt;&lt;%= your_string.html_safe %&gt;&lt;/code&gt;	
+		</content>
+		<date>
+		01/24/2014
+		</date>
+	</fact>
+</facts>

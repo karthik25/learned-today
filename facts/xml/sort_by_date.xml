@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<facts>
+	<fact>
+		<content>
+		The following function gets a list of files w/ most recently created file first&lt;br/&gt;&lt;br/&gt;
+		&lt;pre&gt;
+			def procdir(dir)&lt;br/&gt;
+			files = Dir[ File.join(dir, '**', '*') ].reject { |p| File.directory? p }&lt;br/&gt;
+			files = files.sort_by { |file| File.ctime(file) }&lt;br/&gt;
+			files.reverse&lt;br/&gt;
+			end&lt;br/&gt;
+		&lt;/pre&gt;
+		</content>
+		<date>
+		01/24/2014
+		</date>
+	</fact>
+</facts>

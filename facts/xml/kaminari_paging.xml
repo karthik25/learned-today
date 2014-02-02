@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<facts>
+	<fact>
+		<content>
+		Kaminari paging in 3 steps!&lt;br/&gt;&lt;br/&gt;
+		(1) Add &lt;code&gt;gem 'kaminari'&lt;/code&gt; to &lt;b&gt;Gemfile&lt;/b&gt;&lt;br/&gt;
+		(2) Considering you have an array called &lt;code&gt;@some_array&lt;/code&gt;, the following statement:&lt;br/&gt;
+		&lt;code&gt;@items = Kaminari.paginate_array(@some_Array).page(params[:page]).per(3)&lt;/code&gt;&lt;br/&gt;
+		gets the data for page &lt;code&gt;:page&lt;/code&gt;, with 3 items per page&lt;br/&gt;
+		(3) Finally in the view where you iterate @items, add &lt;code&gt;&lt;%= paginate @items %&gt;&lt;/code&gt;
+		</content>
+		<date>
+		01/25/2014
+		</date>
+	</fact>
+</facts>

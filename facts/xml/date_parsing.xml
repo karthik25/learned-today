@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<facts>
+	<fact>
+		<content>
+		To parse a date in the &lt;var&gt;mm/dd/yyyy&lt;/var&gt; format, do this &lt;code&gt;Date.strptime("01/23/2014", "%m/%d/%Y")&lt;/code&gt;, note the capital Y in the format string!
+		</content>
+		<date>
+		02/02/2014
+		</date>
+	</fact>
+</facts>

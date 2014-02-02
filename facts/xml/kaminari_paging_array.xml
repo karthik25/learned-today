@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<facts>
+	<fact>
+		<content>
+		You can paginate an array with Kaminari using this statement &lt;code&gt;Kaminari.paginate_array(@your_array_var_name).page(params[:page]).per(REQD_PER_PAGE_COUNT)&lt;/code&gt;
+		</content>
+		<date>
+		01/25/2014
+		</date>
+	</fact>
+</facts>

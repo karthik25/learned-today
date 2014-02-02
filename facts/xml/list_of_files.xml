@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<facts>
+	<fact>
+		<content>
+		This statement returns an array of file within the directory specified by &lt;var&gt;dir&lt;/var&gt; - 
+		&lt;code&gt;Dir[ File.join(dir, '**', '*') ].reject { |p| File.directory? p }&lt;/code&gt;
+		</content>
+		<date>
+		01/24/2014
+		</date>
+	</fact>
+</facts>

@@ -35,3 +35,5 @@ gem 'jquery-rails'
 gem 'bcrypt-ruby', '3.0.1'
 
 gem 'kaminari'
+
+gem 'nokogiri'

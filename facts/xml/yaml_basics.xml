@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<facts>
+	<fact>
+		<content>
+		You can load some yaml string, say, &lt;code&gt;name: karthik&lt;/code&gt; using the statements &lt;code&gt;require "yaml"&lt;/code&gt;, followed by &lt;code&gt;y = YAML.load("name: karthik")&lt;/code&gt;. Then to access the "name", use &lt;code&gt;y["name"]&lt;/code&gt;
+		</content>
+		<date>
+		01/24/2014
+		</date>
+	</fact>
+</facts>
