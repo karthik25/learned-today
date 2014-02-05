@@ -13,7 +13,7 @@
     var disqus_shortname = '<%= LearnedToday::Application.config.disqus_short_name %>';
     var disqus_identifier = "<%= @fact.file.gsub('_','-') %>";
     var disqus_url = '<%= LearnedToday::Application.config.site_base_url %>/fact/<%= @fact.file.gsub('_','-') %>';
-    var disqus_developer = 1;
+    var disqus_developer = <%= Rails.env.production? ? 0 : 1 %>;
 
     /* * * DON'T EDIT BELOW THIS LINE * * */
     (function () {
