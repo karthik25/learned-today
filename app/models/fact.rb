@@ -1,3 +1,3 @@
 class Fact
-	attr_accessor :fact, :date
+	attr_accessor :fact, :date, :file
 end

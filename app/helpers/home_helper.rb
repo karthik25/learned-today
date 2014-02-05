@@ -53,6 +53,7 @@ module HomeHelper
 		xml_parsed = Nokogiri::XML(File.open(xml).read)
 		n_fact.fact = get(xml_parsed, "content")
 		n_fact.date = get(xml_parsed, "date")
+		n_fact.file = File.basename(xml, ".*")
 		n_fact
 	end
 

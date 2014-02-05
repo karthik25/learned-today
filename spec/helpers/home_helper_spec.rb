@@ -15,6 +15,7 @@ describe HomeHelper do
 		o = helper.translate_xml(Rails.root.join 'samples/sample.xml')
 		o.fact.should == "some sample content"
 		o.date.should == "01/24/2014"
+		o.file.should == "sample"
 	end
   end
 end

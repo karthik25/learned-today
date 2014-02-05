@@ -5,6 +5,8 @@
 	  <div class="panel-heading">Learnt on <strong><%= fact.date %></strong></div>
 	  <div class="panel-body">
 		<%= fact.fact.html_safe %>
+		<br/><br/>
+		<i class="glyphicon glyphicon-comment" style="vertical-align:middle"></i> <a href="/fact/<%= fact.file.gsub('_','-') %>">Comments</a>
 	  </div>
 	</div>
 <% end %>
